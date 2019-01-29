@@ -1,0 +1,724 @@
+/*==============================================
+                DEFAULT VALUES:
+                
+                Font Family        : Roboto Condensed
+                
+                Royal Blue         : #008ecc (Buttons, Icons, Links, Lines & Background)
+                Steel Gray         : #41464b (Headings)
+                Blue Bayoux        : #64707b (Paragraphs)
+                White              : #fff (Texts with black backgrounds)
+                Black              : #000
+================================================*/
+
+/* General CSS */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", "gabriola";
+    /*"sans-serif", "gabriola"*/
+}
+
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #41464b;
+    text-transform: uppercase;
+}
+h4{
+ 
+    color: #41464b;
+    text-transform: uppercase;
+    
+}
+
+/*=====================================================
+                        HOME
+=====================================================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url(../img/new2.jpg);
+
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /*text-align: center;*/
+}
+
+#workshopc {
+    height: 100%;
+} 
+
+#workshopc-cover {
+    height: 100%;
+    background-image: url(../img/22.jpg);
+
+}
+
+#workshopc-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#workshopc-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /*text-align: center;*/
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+}
+
+/*=====================================================
+                        PARALLAX (Generic)
+=====================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*=====================================================
+                        BUTTONS (Generic)
+=====================================================*/
+
+.btn-general {
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-blue {
+    border-color: #008ecc;
+    color: #008ecc;
+}
+
+.btn-grey{
+    border-color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0,0.8);
+   
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #41464b;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #008ecc;
+    color: #fff;
+}
+
+.btn-grey:hover,
+.btn-grey:focus{
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+}
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+
+/*=====================================================
+                       ANIMATE
+=====================================================*/
+
+#home-cover,
+#home-heading,
+#home-btn {
+
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+}
+
+#home-cover {
+    -webkit-animation-duration: .1s;
+    animation-delay: .1s;
+
+}
+
+#home-heading {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+#home-btn {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+
+/*=====================================================
+                    CONTENT (Generic)
+=====================================================*/
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #008ecc;
+    margin: 0 auto 30px auto;
+}
+
+/*=====================================================
+                  ABOUT
+=====================================================*/
+
+#about-bg-diagonal {
+    width: 60%;
+    height: 700px;
+    float: right;
+    /*background-image: url(../img/aa-1.jpg);*/
+    /*border-left: 200px solid #fff;
+    border-top: 700px solid transparent;*/
+}
+
+#about-bg-diagonal img{
+        width: 500px;
+        margin: 50px auto 0 auto;
+    }
+/*
+.logo-about{
+    margin: 0 auto 0 auto;
+}*/
+#about-content-box {
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+#about-desc p {
+    margin-bottom: 30px;
+}
+
+/*=====================================================
+                      TEAM
+=====================================================*/
+
+.team-member {
+    margin: 0 15px 0 15px;
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+h4.team-member-designation {
+    color: #008ecc ;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/*=====================================================
+                      SOCIAL ICONS
+=====================================================*/
+
+.social-list {
+    padding-left: 0;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i {
+    font-size: 17px;
+}
+
+.icon-gray i {
+    color: #64707b;
+}
+
+.icon-white i {
+    color: #fff;
+}
+
+.social-icon i:hover {
+    color: #008ecc;
+}
+
+
+/*=====================================================
+                       TESTIMONIALS
+=====================================================*/
+
+#testimonials-cover {
+    background-image: url(../img/p1-1.jpg);
+}
+
+#testimonials .content-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#customers-testimonials {
+    padding: 50px 0;
+}
+
+.testimonial img {
+    max-width: 200px;
+    margin: 0 auto 0 auto;
+}
+
+.testimonial blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 6px 150px;
+    position: relative;
+}
+
+.testimonial blockquote p {
+    color: #fff;
+}
+/*
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.testimonial blockquote::before {
+    content: "\201C";
+    top: 0;
+    left: 100px;
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 0;
+    right: 100px;
+}
+*/
+.testimonial-author p {
+    color: #fff;
+    font-size: 17px;
+}
+
+
+.testimonial-author p strong {
+    display: block;
+}
+
+
+
+/*=====================================================
+                       WORKSHOP
+=====================================================*/
+/*
+#workshop-cover {
+    /* Change background to workshop 
+    background-image: url(../img/p1-1.jpg);
+}
+
+#workshop .content-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#workshop-check {
+    padding: 50px 0;
+}
+
+.workshop img {
+    max-width: 200px;
+    margin: 0 auto 0 auto;
+}
+
+.workshop blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 6px 150px;
+    position: relative;
+}
+
+.workshop blockquote p {
+    color: #fff;
+}
+.workshop-recheck p {
+    color: #fff;
+    font-size: 17px;
+}
+
+
+.woekshop-recheck p strong {
+    display: block;
+}
+*/
+/*=====================================================
+                   PARTNERS
+=====================================================*/
+#partners {
+    margin-bottom: 50px;
+}
+
+.partner {
+    padding: 40px 10px;
+}
+
+/*=====================================================
+                   CONTACT
+=====================================================*/
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+#contact-left h3,
+#contact-right h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p {
+    color: #fff;
+    margin-bottom: 30px
+}
+
+#contact-info {
+    background-image: url(../img/nigeria.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+address {
+    color: #fff;
+}
+
+
+address strong {
+    font-size: 16px;
+}
+
+address strong,
+#phone-fax-email strong {
+    letter-spacing: 1px;
+}
+
+form .form-control {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 1;
+    border-color: #000;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+/*=====================================================
+                   FOOTER
+=====================================================*/
+#footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+#footer-menu a:hover {
+    color: #008ecc;
+}
+
+
+
+
+/*=====================================================
+                   NAVIGATION
+=====================================================*/
+
+
+.navbar {
+    padding: 10px 0;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+
+}
+
+.brand-name{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700; 
+}
+
+.brand-name:hover, .brand-name:focus{
+    background: none;
+    color: #008ecc;
+}
+
+
+.camrab-top-nav {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.camrab-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background: none;
+    color: #008ecc;
+}
+
+.navbar-toggle {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-collapse {
+    max-height: none !important;
+}
+
+.camrab-top-nav ul.navbar-nav > li.active > a {
+    color: #008ecc;
+}
+
+
+/*===========================================
+                WORKSHOP
+============================================*/
+
+#workshopc-bg-diagonal {
+    width: 60%;
+    height: 700px;
+    float: left;
+    border-right: 200px solid #fff;
+    border-top: 700px solid transparent;
+}
+
+/*
+.logo-about{
+    margin: 0 auto 0 auto;
+}*/
+
+#workshopc-content-box {
+    float: right;
+    height: 700px;
+}
+
+#workshopc-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#workshopc-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#workshopc .content-title h3 {
+    text-align: right;
+}
+
+#workshopc .content-title-underline {
+    margin: 0 0 30px 400px;
+}
+
+#workshopc-desc p {
+    margin-bottom: 30px;
+}
+
+.btn-workshop{
+    float: right;
+}
+
+/* WORKSHOP FORM*/
+#workshopc-right{
+     float: right;
+    height: 700px;
+}
+.bkg h4{
+    font-weight: 600;
+}
+
+.w-bkg{
+        background-image: url(../img/b1.jpg);
+
+}
+/*=====================================================
+                   WORKSHOP 2
+=====================================================*/
+/*
+.service-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i {
+    color: #34c6d3;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+    color: #fff;
+    background-color: #34c6d3;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.service-item-desc p {
+    margin: 0;
+    padding-left: 85px;
+}
+*/

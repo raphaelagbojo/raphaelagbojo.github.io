@@ -1,151 +1,638 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Container</title>
-    <link href="https://fonts.googleapis.com/css?family=Motserrat" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <style>
-        body,
-        html {
-            width: 100%;
-            height: 100%;
-        }
+    <!--meta tags-->
+    <meta charset="utf-8">
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
+    <!-- ! SEO-->
+    <meta name="description" content="Center for Advanced Medical Research and Biotechnology">
+    <meta name="keywords" content="Biotechnology, Medical Research, Advanced Medical Research">
 
-        hr {
-            max-width: 65px;
-            border-width: 3px;
-            border-color: #F05F44;
-        }
 
-        .faded {
-            color: rgba(255, 255, 255, 0.8);
-        }
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, Initial-scale=1">
 
-        header.startup {
-            background-position: center;
-            background-image: url("pc1.jpg");
-            background-size: cover;
-            height: 100%;
-        }
+    <!-- title of Project -->
+    <title>Camrab</title>
 
-        header.startup hr {
-            margin-top: 200px;
-            margin-bottom: 30px;
-        }
+    <!-- favicon -->
+    <link rel="shortcut icon" type="img/css" href="img/icon.png">
 
-        header.startup h1 {
-            font-size: 2rem;
-        }
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
 
-        .btn {
-            font-weight: 700;
-            text-transform: uppercase;
-            border-radius: 300px;
-            font-family: 'Montserrat', sans-serif;
-        }
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
-        .btn-xl {
-            padding: 1rem 2rem;
-        }
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
-        .btn-primary {
-            background-color: #F05F44;
-            border-color: #F05F44;
-        }
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate/animate.css">
 
-        .btn-primary:hover {
-            background-color: #ee4b08;
-            border-color: #ee4b08;
-            border-width: 5px;
-            cursor: pointer;
-        }
+    <!-- magnific-popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
 
-        .fc {
-            color: navy;
-        }
+    <!-- lightbox CSS
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">-->
 
-    </style>
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+
+    <!-- style CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- responsive CSS-->
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
 
+    <!-- header -->
+    <header>
+        <!--camrab-top-nav-->
+        <nav class="navbar navbar-fixed-top">
 
+            <div class="container-fluid">
 
+                <div class="camrab-nav-wrapper">
 
-<body>
+                    <div class="navbar-header">
 
-    <header class="startup text-center text-white d-flex">
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-12 my-auto">
-                    <h1 class="text-uppercase faded">
-                        <strong class="fc">The biggest startup event of the year</strong>
-                    </h1>
-                    <hr>
-                </div>
-                <div class="col-lg-12 my-auto">
-                    <!-- Begin Mailchimp Signup Form -->
-                    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-                    <style type="text/css">
-                        #mc_embed_signup {
-                           
-                            clear: left;
-                            font: 14px Helvetica, Arial, sans-serif;
-                        }
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#camrab-menu">
 
-                        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                            <span class="sr-only">Toggle nav</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
 
-                    </style>
-                    <div id="mc_embed_signup">
-                        <form action="https://text.us20.list-manage.com/subscribe/post?u=90cb523db76614662db552c22&amp;id=aa86b52c8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll">
-                                
-                               
-                                <div class="clear"><input class="btn btn-primary btn-xl" type="submit" value="Find Out More" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                            </div>
-                        </form>
+                        </button>
+
+                        <a class="navbar-brand brand-name" href="index.php">
+                            <!-- <img src="img/CAMRAB.jpg" alt="logo" width="60px">-->CAMRAB
+                        </a>
                     </div>
-                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                    <script type='text/javascript'>
-                        (function($) {
-                            window.fnames = new Array();
-                            window.ftypes = new Array();
-                            fnames[0] = 'EMAIL';
-                            ftypes[0] = 'email';
-                            fnames[1] = 'FNAME';
-                            ftypes[1] = 'text';
-                            fnames[2] = 'LNAME';
-                            ftypes[2] = 'text';
-                            fnames[3] = 'ADDRESS';
-                            ftypes[3] = 'address';
-                            fnames[4] = 'PHONE';
-                            ftypes[4] = 'phone';
-                            fnames[5] = 'BIRTHDAY';
-                            ftypes[5] = 'birthday';
-                        }(jQuery));
-                        var $mcj = jQuery.noConflict(true);
 
-                    </script>
-                    <!--End mc_embed_signup-->
-                    
+                    <div class="collapse navbar-collapse" id="camrab-menu">
+
+                        <ul class="nav navbar-nav">
+                            <li><a class="smooth-scroll" href="#home">Home</a></li>
+                            <li><a class="smooth-scroll" href="#about">About</a></li>
+
+                            <li><a class="smooth-scroll" href="#team">Team</a></li>
+
+                            <li><a class="smooth-scroll" href="#partners">Partners</a></li>
+                            <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                        </ul>
+
+                    </div>
+
                 </div>
 
             </div>
-        </div>
+
+        </nav>
 
     </header>
 
 
+    <!-- Home -->
+    <section id="home">
+        <div id="home-cover" class="bg-parallax animated fadeIn">
+            <div id="home-content-box">
+                <div id="home-content-box-inner" class="text-center">
+                    <div id="home-heading" class="animated zoomIn">
+                        <h3>CAMRAB<div class="content-title-underlines" style="width: 30px; height: 3px; background-color: #fff;  margin: 0 auto 20px auto;"></div>CENTER FOR ADVANCED MEDICAL<br>RESEARCH AND BIOTECHNOLOGY</h3>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+                    </div>
+                    <div id="home-btn" class="animated zoomIn">
+                        <a class="btn btn-lg btn-general btn-white smooth-scroll" href="#about" role="button" title="View Our Work">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <!-- About right side diagonal BG parallax -->
+        <div id="about-bg-diagonal">
+            <img src="img/CAMRAB.jpg" class="img-responsive" alt="logo about">
+        </div>
+
+        <!-- About left side diagonal BG parallax -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="about-content-box">
+                        <div id="about-content-box-outer">
+                            <div id="about-content-box-inner">
+                                <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <h3>Our Vision</h3>
+                                    <div class="content-title-underline"></div>
+                                </div>
+
+                                <div id="about-desc" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <p>To establish an excellent team of scientists that would contribute to the development of products and toolkits to reduce the burden of diseases in our society.</p>
+                                </div>
+
+                                <div class="content-title wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <h3>Our mission</h3>
+                                    <div class="content-title-underline"></div>
+                                </div>
+
+                                <div id="about-desc" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <p>To close the capacity gap in research at individual, institutional and regional levels by developing a critical mass of competent researchers, providing an enabling environment for high quality research, and forging partnerships with industry.</p>
+                                </div>
+
+                                <!--  <div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#team" role="button" title="View The Team">View The Team</a>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- About Continuation -->
+    <section id="about2">
+
+        <!-- About right side diagonal BG parallax -->
+        <div id="about-bg-diagonal">
+            <!--  <img src="img/CAMRAB.jpg" class="img-responsive" alt="logo about">-->
+            <div id="about-content-box-inner">
+
+
+                <div class="content-title wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h3>Objectives</h3>
+                    <div class="content-title-underline"></div>
+                </div>
+
+                <div id="about-desc" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <p>&#8608; Establish a pipeline of highly trained scientists at the MSc and PhD levels in clinical trials, genomics, molecular biology, pharmacological biochemistry and other medical research, who will serve as a bridge between Academia and Industry<br>&#8608; Create a platform for continuous product development<br>&#8608; Develop a strong infectious disease database to inform and modify policy with strong and verifiable evidence<br>&#8608; Institute several lines of health systems research<br>&#8608; Act as a honest broker between University, Industry and the Community in an equitable way<br>
+                    </p>
+                </div>
+                <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h3>Our values</h3>
+                    <div class="content-title-underline"></div>
+                </div>
+
+                <div id="about-desc" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    <p>&#8608;<strong>Team</strong>work<br>&#8608;<strong>Team </strong>spirit<br>&#8608;<strong>Team </strong>effort
+                    </p>
+                </div>
+                <!-- <div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#team" role="button" title="View The Team">View The Team</a>
+                                </div>-->
+                <div class="content-title wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h3>Current project</h3>
+                    <div class="content-title-underline"></div>
+                </div>
+
+                <div id="about-desc" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <p><strong>Title:</strong> Determinants and prevalence of parasite resistance to Sulphadoxine-Pyrimethamine (SP) in Intermittent Preventive Treatment for malaria among pregnant women in an endemic community.<br>
+                        <strong>Acronym:</strong> IPT-SP Study<br>
+                        <strong>Funder:</strong> European and Developing countries Clinical Trials Partnership (EDCTP)<br>
+                        <strong>Duration:</strong> July 2017-June 2020
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About left side diagonal BG parallax -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="about-content-box">
+                        <div id="about-content-box-outer">
+                            <div id="about-content-box-inner">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Team -->
+    <!--
+    <section id="team">
+        <div class="content-box">
+            <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>The Team</h3>
+                <div class="content-title-underline"></div>
+            </div>
+
+
+            <div class="container">
+                <div class="row wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="col-md-12">
+                        <div id="team-members" class="owl-carousel owl-theme">
+                            <div class="team-member">
+                                <img src="img/drT.jpg" style="height:500px;" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+
+                                    <h4 class="team-member-name">Dr. Tinuke Olaleye</h4>
+                                    <!-- <h4 class="team-member-designation">Head / Coordinator</h4>
+                                    <ul class="social-list">
+                                        <p>is a board-certified Obstetrician Gynecologist, Fellow of the West Africa College of Surgeons, and the National Postgraduate Medical College of Nigeria.<br> She holds a WHO/TDR Clinical Research and Development Fellowship, and is an EDCTP Career Development Fellow, conducting research on parasite resistance to Malaria chemoprophylaxis in Pregnancy. Her research interests include the perinatal transmission of infectious diseases, and the active surveillance of drug/vaccine safety in pregnancy.<br> Dr Olaleye is a Senior Lecturer and Consultant Obstetrician Gynecologist at the Babcock University and Teaching Hospital, Ogun state, Nigeria. She is also director of the institution’s Centre for Advanced Medical Research and Biotechnology (CAMRAB).</p>
+                                        <!-- <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/drW.jpg" style="height:500px;" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+
+                                    <h4 class="team-member-name">Prof. Walker</h4>
+                                    <!--<h4 class="team-member-designation">Head</h4>
+                                    <ul class="social-list">
+                                        <p>is currently Professor of Pharmacology and Therapeutics of Babcock University Ilishan Remo in Ogun State. <br>He is a Fellow of both the Nigerian College and West African College of Physicians. He also holds a Doctor of Medical Science Degree (Dr.Med.Sc.) of the Karolinska Institutet, Sweden and was visiting Research Fellow and Lecturer in the Liverpool School of Medicine in 1987. <br>His work in malaria gave him the opportunity to be part of the global team that developed new antimalarials which included Halofantrine and Artemisinin, putting him on the world map with respect to management of severe and complicated malaria.<br>
+                                            He joined the WHO in 1996 as Advisor on Operational Research for the Accelerated Malaria Control Programme. He served in various capacities such as WHO Representative to Uganda, WHO Coordinator for East and Southern Africa as well as West Africa. He was awarded the Order of the Knights of Burkina Faso in 2014 for his work in Public Health.<br> He retired from WHO in 2014, and is currently a reviewer for WHO-TDR. He is also the head of the Babcock University Centre for Advanced Medical Research and Biotechnology (CAMRAB).
+
+                                        </p>
+                                        <!--<li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="team-member">
+                                <img src="img/avatar2.jpg" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+
+                                    <h4 class="team-member-name">Nurse Sowemimo</h4>
+                                    <h4 class="team-member-designation">Nurse / Research Assistant</h4>
+                                    <ul class="social-list">
+                                        <!--<li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/avatar.jpg" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+
+                                    <h4 class="team-member-name">Dr. Noblefather</h4>
+                                    <h4 class="team-member-designation">Research Assistant</h4>
+                                    <ul class="social-list">
+                                         <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/avatar.jpg" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+
+                                    <h4 class="team-member-name">Agbojo Raphael</h4>
+                                    <h4 class="team-member-designation">Data Manager</h4>
+                                    <ul class="social-list">
+                                        <!--<li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/avatar2.jpg" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+
+                                    <h4 class="team-member-name">Awe Ruth</h4>
+                                    <h4 class="team-member-designation">Research Assistant</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+-->
+    <!--  </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> The End
+    </section>-->
+
+    <!-- Workshop -->
+    <!--
+    <section id="workshop">
+        <div id="workshop-cover" class="bg-parallax">
+            <div class="content-box">
+                <div class="content-title content-title-white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>THE TEAM</h3>
+                    <div class="content-title-underline"></div>
+                </div>
+
+
+                <div class="container">
+                    <div class="row wow animated bounceInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="col-md-12">
+                            <!--customers testimonials
+                            <div id="workshop-check" class="text-center owl-carousel owl-theme">
+                                <div class="workshop">
+                                   <!-- testimonial 
+
+                                    <blockquote class="text-center">
+                                        <p>Click here to register for the <a href="workshop.php">workshop</a> to happen in October </p>
+                                    </blockquote>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- End
+            </div>
+        </div>
+    </section>-->
+
+
+
+    <section id="team">
+        <div id="testimonials-cover" class="bg-parallax">
+            <div class="content-box">
+                <div class="content-title content-title-white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h3>The team</h3>
+                    <div class="content-title-underline"></div>
+                </div>
+
+
+                <div class="container">
+                    <div class="row wow animated bounceInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="col-md-12">
+                            <div id="customers-testimonials" class="text-center owl-carousel owl-theme">
+                                <div class="testimonial">
+                                    <img src="img/drT.jpg" class="img-responsive img-circle" alt="testimonial">
+                                    <blockquote class="text-center">
+                                        <p>She is a board-certified Obstetrician Gynecologist, Fellow of the West Africa College of Surgeons, and the National Postgraduate Medical College of Nigeria. She holds a WHO/TDR Clinical Research and Development Fellowship, and is an EDCTP Career Development Fellow, conducting research on parasite resistance to Malaria chemoprophylaxis in Pregnancy. <br>Her research interests include the perinatal transmission of infectious diseases, and the active surveillance of drug/vaccine safety in pregnancy. Dr Olaleye is a Senior Lecturer and Consultant Obstetrician Gynecologist at the Babcock University and Teaching Hospital, Ogun state, Nigeria. She is also director of the institution’s Centre for Advanced Medical Research and Biotechnology (CAMRAB).</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Dr. Atinuke Olalaye</strong>
+                                            <!--<span>CEO & Founder - Rafmak</span>-->
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <img src="img/drW.jpg" class="img-responsive img-circle" alt="testimonial">
+                                    <blockquote class="text-center">
+                                        <p>He is currently Professor of Pharmacology and Therapeutics of Babcock University Ilishan Remo in Ogun State. He is a Fellow of both the Nigerian College and West African College of Physicians. He also holds a Doctor of Medical Science Degree (Dr.Med.Sc.) of the Karolinska Institutet, Sweden and was visiting Research Fellow and Lecturer in the Liverpool School of Medicine in 1987. His work in malaria gave him the opportunity to be part of the global team that developed new antimalarials which included Halofantrine and Artemisinin, putting him on the world map with respect to management of severe and complicated malaria.<br>
+                                            He joined the WHO in 1996 as Advisor on Operational Research for the Accelerated Malaria Control Programme. He served in various capacities such as WHO Representative to Uganda, WHO Coordinator for East and Southern Africa as well as West Africa. He was awarded the Order of the Knights of Burkina Faso in 2014 for his work in Public Health. He retired from WHO in 2014, and is currently a reviewer for WHO-TDR. He is also the head of the Babcock University Centre for Advanced Medical Research and Biotechnology (CAMRAB).
+                                        </p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Professor Oladapo Walker </strong>
+                                            <!--<span>CEO & Founder - The(#)Tag</span>-->
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- <div class="testimonial">
+                                    <img src="img/b1.jpg" class="img-responsive img-circle" alt="testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Agbojo Raphael</strong>
+                                            <span>CEO & Founder - Rafmak</span>
+                                        </p>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--End-->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Partners -->
+    <section id="partners">
+        <div class="content-box">
+            <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>Partners</h3>
+                <div class="content-title-underline"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                <div class="col-md-12">
+                    <div id="partners-list" class="owl-carousel owl-theme">
+                        <div class="partner">
+                            <img src="img/p.png" class="img-responsive" alt="partner">
+                        </div>
+                        <div class="partner">
+                            <img src="img/bu.jpg" class="img-responsive" alt="partner">
+                        </div>
+                        <!--<div class="client">
+                            <img src="img/sp2.jpg" class="img-responsive" alt="client">
+                        </div>-->
+                        <!-- <div class="partner">
+                            <p style="font-size: 40px; font-weight: 700; text-align: center;">KATCHEY</p>
+                            <!--<img src="img/ps2.jpg" class="img-responsive" alt="client">
+                        </div>-->
+                        <!--<div class="client">
+                            <img src="img/ps2.png" class="img-responsive" alt="client">
+                        </div>
+                        <div class="client">
+                            <img src="img/ps3.png" class="img-responsive" alt="client">
+                        </div>
+                        <div class="client">
+                            <img src="img/ps4.png" class="img-responsive" alt="client">
+                        </div>
+                        <div class="client">
+                            <img src="img/ps5.png" class="img-responsive" alt="client">
+                        </div>
+                        <div class="client">
+                            <img src="img/ps6.png" class="img-responsive" alt="client">
+                        </div>
+                        <div class="client">
+                            <img src="img/ps7.png" class="img-responsive" alt="client">
+                        </div>
+                        <div class="client">
+                            <img src="img/sp7.png" class="img-responsive" alt="client">
+                        </div>-->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div id="contact">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div id="contact-left">
+
+
+                            <div id="contact-info">
+
+                                <address>
+
+                                    <strong>Office</strong><br>
+                                    <p>Babcock University, Ilishan Remo,<br> Ogun State,<br> Nigeria.</p>
+
+                                </address>
+                                <div id="phone-fax-email">
+
+                                    <p>
+                                        <strong>Phone: </strong><span>(234) 816 579 9094</span><br>
+
+                                        <strong>Email: </strong><span>atinukeoa@babcock.edu.ng</span> <br>
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <ul class="social-list">
+                                <li><a href="#" class="social-icon icon-white"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="social-icon icon-white"><i class="fa fa-twitter"></i></a></li>
+                                <!--<li><a href="#" class="social-icon icon-white"><i class="fa fa-youtube-play"></i></a></li>-->
+                                <li><a href="#" class="social-icon icon-white"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--<div class="col-md-6">
+
+                        <div id="contact-right">
+
+                            <h3>CONTACT US</h3>
+                            <form action="#">
+
+                                <input type="text" name="full-name" placeholder="Full Name" class="form-control">
+                                <input type="text" name="email" placeholder="Email Address" class="form-control">
+                                <textarea rows="5" name="message" placeholder="Message...." class="form-control"></textarea>
+
+                                <div id="send-btn">
+                                    <a class="btn btn-lg btn-general btn-white" href="#" role="button">SEND</a>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>-->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div id="footer-copyrights">
+                            <p>Copyrights &copy; 2018 All Rights Reserved. Designed by 'The (#) Tag'</p>
+                        </div>
+
+                    </div>
+                    <!-- sm, hidden on small devices -->
+                    <div class="col-md-6 hidden-sm hidden-xs">
+
+                        <div id="footer-menu">
+                            <ul>
+                                <li><a class="smooth-scroll" href="#home">Home</a>/</li>
+                                <li><a class="smooth-scroll" href="#about">About</a>/</li>
+<!--                                <li><a class="smooth-scroll" href="#workshop">Workshop</a>/</li>-->
+                                <li><a class="smooth-scroll" href="#team">Team</a>/</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-blue btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+
+            <i class="fa fa-angle-up"></i>
+
+        </a>
+    </footer>
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery2.js"></script>
+    <script src="js/jquery.js"></script>
+
+    <!-- boostrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- WOW JS-->
+    <script src="js/wow/wow.min.js"></script>
+
+    <!-- magnific-popup JS -->
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- lightbox JS
+    <script type="text/javascript" src="js/lightbox.min.js"></script>-->
+
+    <!-- owl carousel JS -->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- counter JS -->
+    <script src="js/counter/jquery.waypoints.min.js"></script>
+    <script src="js/counter/jquery.counterup.min.js"></script>
+
+    <!-- easing JS-->
+    <script src="js/easing/jquery.easing.1.3.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
 </body>
 
 </html>
